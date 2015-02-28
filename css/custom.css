@@ -1,0 +1,63 @@
+.navbar-custom .navbar-brand {
+color: #393040;
+padding: 20px;
+}
+
+
+.navbar-custom .nav li a{
+color: #393040;
+padding: 20px;
+}
+
+.site-heading h1 {
+color: #393040;
+}
+
+span.subheading {
+color: #3c4759;
+}
+
+.container-fluid {
+	padding-right: 40px;
+	padding-left: 95px;
+	padding-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.btn-default:hover, .btn-default:focus {
+	background-color: #75667f;
+	border: 1px solid #393040;
+	color: #fff;
+}
+
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+	color: #75667f;
+}
+
+.btn-default:hover, .btn-default:focus {
+background-color: #9955bb;
+border: 1px solid #6d5187;
+color: #fff;
+}
+
+.intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+	padding-bottom: 0px;
+	padding-top: 150px;
+}
+
+.navbar-brand {
+	float: left;
+	/* height: 170px; */
+}
+
+.navbar-custom .navbar-brand {
+	padding: 0px 20px 20px 20px;
+}
+
+.navbar-right {
+	margin-top: 25px;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 80px;
+}
