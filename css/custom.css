@@ -1,53 +1,155 @@
-.navbar-custom .navbar-brand {
-color: #393040;
-padding: 20px;
+.navbar-inverse .navbar-brand {
+	color: #393040;
+}
+
+.navbar-right{
+	margin-top: 4%;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	color: #393040;
+	background-color: #fff;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+max-height: 180px;
 }
 
 
-.navbar-custom .nav li a{
-color: #393040;
-padding: 20px;
+.navbar-inverse{
+	border-bottom: none;
+	background-color: transparent;
+	border-color: #fff;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-inverse .nav li a{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	color: #393040;
+	background-color: #fff;
 }
 
 .site-heading h1 {
-color: #393040;
+	color: #393040;
 }
 
 span.subheading {
-color: #3c4759;
+	color: #3c4759;
 }
 
-.container-fluid {
-	padding-right: 40px;
-	padding-left: 95px;
-	padding-top: 25px;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 .btn-default:hover, .btn-default:focus {
 	background-color: #75667f;
 	border: 1px solid #393040;
 	color: #fff;
 }
 
-.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+.navbar-inverse .nav li a:hover, .navbar-inverse .nav li a:focus {
 	color: #75667f;
 }
 
 .btn-default:hover, .btn-default:focus {
-background-color: #9955bb;
-border: 1px solid #6d5187;
-color: #fff;
+	background-color: #9955bb;
+	border: 1px solid #6d5187;
+	color: #fff;
 }
 
-.intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+/* *********************************
+           Variables
+  ********************************** */
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+
+
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: #393040;
+  }
+}
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+  padding-top: 50px;
+  margin-top: 15%;
+  height: 55px;
+  overflow: hidden;
+}
+
+.small-logo {
+  color: #393040;
+  font-size: 1.7em;
+  padding-bottom: 2px;
+  font-family: 'Montserrat';
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: white;
+}
+.big-logo-row .big-logo-container {
+  padding-top: 10px;
+}
+.big-logo-row img {
+  height: 10em;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+@media (min-width: 400px) {
+  .big-logo-row img {
+    height: 7.5em;
+  }
+}
+@media (min-width: 440px) {
+  .big-logo-row img {
+    height: 8em;
+  }
+}
+@media (min-width: 500px) {
+  .big-logo-row img {
+    height: 8.5em;
+  }
+}
+@media (min-width: 630px) {
+  .big-logo-row img {
+    height: 9em;
+  }
+}
+@media (min-width: 768px) {
+  .big-logo-row img {
+    height: 9.5em;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .big-logo-row img {
+    height: 10em;
+  }
+}
+
+
+/* .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
 	padding-bottom: 0px;
 	padding-top: 150px;
 }
 
 .navbar-brand {
 	float: left;
-	/* height: 170px; */
+	// height: 170px; 
 }
 
 .navbar-custom .navbar-brand {
@@ -60,4 +162,26 @@ color: #fff;
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: 80px;
+	
+	.container-fluid {
+	padding-right: 40px;
+	padding-left: 95px;
+	margin-right: auto;
+	margin-left: auto;
 }
+
+.navbar-custom .navbar-brand {
+	color: #393040;
+	padding: 20px;
+}
+
+
+.navbar-custom .nav li a{
+	color: #393040;
+	padding: 20px;
+	background-color: #fff;
+}
+
+} */
+
+
