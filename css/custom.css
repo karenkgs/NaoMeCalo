@@ -2,6 +2,11 @@
 	color: #393040;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+background-color: #000;
+
+}
+
 .navbar-right{
 	margin-top: 4%;
 }
@@ -12,13 +17,17 @@
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-max-height: 180px;
+	max-height: 180px;
+}
+
+.intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+	padding: 150px 0px 40px 0px;
 }
 
 
 .navbar-inverse{
 	border-bottom: none;
-	background-color: transparent;
+	background-color: #fff;
 	border-color: #fff;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -40,22 +49,22 @@ span.subheading {
 	color: #3c4759;
 }
 
-
-.btn-default:hover, .btn-default:focus {
-	background-color: #75667f;
+#registrar{
+	background-color: #9955bb;
 	border: 1px solid #393040;
 	color: #fff;
 }
+
+#registrar:hover, #registrar:focus{
+	background-color: #bfb063;
+	border-color: #6d5187;
+}
+
 
 .navbar-inverse .nav li a:hover, .navbar-inverse .nav li a:focus {
 	color: #75667f;
 }
 
-.btn-default:hover, .btn-default:focus {
-	background-color: #9955bb;
-	border: 1px solid #6d5187;
-	color: #fff;
-}
 
 /* *********************************
            Variables
@@ -104,39 +113,39 @@ span.subheading {
 .big-logo-row .big-logo-container {
   padding-top: 10px;
 }
-.big-logo-row img {
+#big-logo {
   height: 10em;
   margin: 0;
   padding: 0 0 15px 0;
 }
-@media (min-width: 400px) {
-  .big-logo-row img {
-    height: 7.5em;
+@media (min-width: 300px) {
+  #big-logo {
+    height: 5em;
   }
 }
 @media (min-width: 440px) {
-  .big-logo-row img {
-    height: 8em;
+  #big-logo {
+    height: 6em;
   }
 }
 @media (min-width: 500px) {
-  .big-logo-row img {
-    height: 8.5em;
+  #big-logo {
+    height: 7em;
   }
 }
 @media (min-width: 630px) {
-  .big-logo-row img {
-    height: 9em;
+  #big-logo {
+    height: 7.5em;
   }
 }
 @media (min-width: 768px) {
-  .big-logo-row img {
-    height: 9.5em;
+  #big-logo {
+    height: 8em;
     padding-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
-  .big-logo-row img {
+  #big-logo {
     height: 10em;
   }
 }

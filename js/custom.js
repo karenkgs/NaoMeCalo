@@ -19,11 +19,11 @@ $(window).scroll(function() {
   
    $('.small-logo-container ').css({ "padding-top": smallPadding}); 
   
-  /* var navOpacity = ySmall / smallLogoHeight; 
+  var navOpacity = ySmall / smallLogoHeight; 
   if  (navOpacity > 1) { navOpacity = 1; }
   if (navOpacity < 0 ) { navOpacity = 0; }
   var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-	$('.navbar').css({"background-color": navBackColor});  */
+	$('.navbar').css({"background-color": navBackColor});  
    
   
    var shadowOpacity = navOpacity * 0.4;

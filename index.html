@@ -6,12 +6,11 @@
       <meta charset="utf-8">
       <script src="js/dados.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-      <script src="js/map.js"></script>
 
       <link href="css/bootstrap.min.css" rel="stylesheet">
 
       <title>Não me calo!</title>
-      <link rel="icon" href="img/logo.ico" sizes="16x16">
+      <link rel="icon" href="img/logo.png" sizes="16x16">
       <link href="css/map.css" rel="stylesheet">
       <link href="css/clean-blog.css" rel="stylesheet">
 	    <link href="css/custom.css" rel="stylesheet">
@@ -31,15 +30,20 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		
+		<a class="navbar-brand" href="#">
+            <img id="big-logo" src="img/logo.png" />
+		</a>
+		
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="small-logo-container">
+          <!-- <div class="small-logo-container">
             <a class="small-logo" href="#">não me calo!</a>
-          </div>
+          </div> -->
         </div>
         <div class="navbar-collapse collapse">
           
@@ -53,15 +57,16 @@
       </div>
     </div>
 
-    <div class="container-fluid big-logo-row">
+
+    <!-- <div class="container-fluid big-logo-row">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
             <img class="big-logo" src="img/logo.png" />
-          </div><!--/.col-xs-12 -->
-        </div><!--/.row -->
-      </div><!--/.container -->
-    </div><!--/.container-fluid -->
+          </div>
+        </div>
+      </div>
+    </div> -->
 
 
     <!-- Page Header -->
@@ -73,7 +78,7 @@
                     <div class="site-heading">
                         <h1>Dê voz à sua denúncia</h1>
 						<br>
-						<button class="btn btn-default" type="submit">registrar ocorrencia</button>
+						<button class="btn btn-default" id="registrar" type="submit">Denuncie um assédio</button>
                     </div>
                 </div>
             </div>
@@ -112,7 +117,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog_.js"></script>
-	
-	<script src="js/custom.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/custom_.js"></script>
 </body>
 </html>
