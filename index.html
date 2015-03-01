@@ -10,6 +10,7 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
 
       <title>Não me calo!</title>
+	  	
       <link rel="icon" href="img/logo.png" sizes="16x16">
       <link href="css/map.css" rel="stylesheet">
       <link href="css/clean-blog.css" rel="stylesheet">
@@ -27,8 +28,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-
-		<a class="navbar-brand" href="#">
+		
+		<a class="navbar-brand" href="index.html">
             <img id="big-logo" src="img/logo.png" />
 		</a>
 
@@ -73,19 +74,113 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Dê voz à sua denúncia</h1>
+                        <h1>Não se pode calar um assédio!</h1>
 						<br>
-						<button class="btn btn-default" id="registrar" type="submit">Denuncie um assédio</button>
-                    </div>
+						<button class="btn btn-default" id="registrar" type="submit">Faça sua denúncia</button>
+                    </div
                 </div>
             </div>
         </div>
     </header>
 
+	<p class="descricaomapa">Confira no mapa abaixo os acontecimentos registrados: </p>
+	
     <div class="map">
       <input id="pac-input" class="controls" type="text" placeholder="Search Box">
       <div id="map-canvas"></div>
     </div>
+	
+	<header class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading" id="facadenuncia">
+                        <h1>Faça sua denúncia</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<form class="form-horizontal" id="contactForm">
+					<fieldset>
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Categoria">Categoria</label>
+						  <div class="col-md-8">
+							<select id="Categoria" name="Categoria" class="form-control inpt">
+							<option value="0">Selecione a categoria do local</option>
+							  <option value="1">Estabelecimento Comercial</option>
+							  <option value="2">Evento</option>
+							  <option value="3">Rua</option>
+							</select>
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Nome do Local">Nome do Local</label>  
+						  <div class="col-md-8">
+						  <input id="Nome do Local" name="Nome do Local" type="text" placeholder="Dê nome ou detalhes ao local" class="form-control input-md inpt" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Localização">Localização</label>  
+						  <div class="col-md-8">
+						  <input id="Localização" name="Localização" type="text" placeholder="Localização" class="form-control input-md inpt" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Data do Acontecimento">Data</label>  
+						  <div class="col-md-8">
+						  <input id="Data do Acontecimento" name="Data" type="date" placeholder="Data" class="form-control input-md inpt" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Turno">Turno</label>
+						  <div class="col-md-8">
+							<select id="Turno" name="Turno" class="form-control inpt">
+							<option value="0">Selecione um turno</option>
+							  <option value="1">Manhã</option>
+							  <option value="2">Tarde</option>
+							  <option value="2">Noite</option>
+							  <option value="4">Madrugada</option>
+							</select>
+						  </div>
+						</div>
+
+						<!-- Textarea -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" id="lblForm" for="Conte o que Aconteceu">Conte o que Aconteceu</label>
+						  <div class="col-md-8">                     
+							<textarea class="form-control inpt" id="txtArea" placeholder="Descreva a situação ou agressor(es)." name="Conte o que Aconteceu"></textarea>
+						  </div>
+						</div>
+						
+						<div class="form-group" id="btnGroup">
+							<button class="btn btn-default" id="enviar" type="submit">Enviar</button>
+						</div>
+
+						</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+
+    <hr>
 
     <footer>
         <div class="container">
@@ -113,9 +208,13 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog_.js"></script>
-
-	  <script src="js/custom.js"></script>
-    <script src="js/map.js"></script>
+	<script src="js/map.js"></script>
+	<script type="text/javascript">	
+		$( "#registrar" ).click(function() {
+		  $('html, body').animate({
+		   scrollTop: $("#facadenuncia").offset().top
+		}, 300);
+		});
+	</script>
 </body>
 </html>

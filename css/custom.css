@@ -1,3 +1,18 @@
+#lblForm{
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#txtArea{
+	height: 180px;
+
+}
+
+.inpt{
+	margin-top: 4px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
 .navbar-inverse .navbar-brand {
 	color: #393040;
 }
@@ -21,9 +36,14 @@ background-color: #000;
 }
 
 .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-	padding: 150px 0px 40px 0px;
+	padding: 150px 0px 0px 0px;
 }
 
+.descricaomapa {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: light;
+	text-align: center;
+}
 
 .navbar-inverse{
 	border-bottom: none;
@@ -49,17 +69,29 @@ span.subheading {
 	color: #3c4759;
 }
 
-#registrar{
+#registrar, #enviar{
 	background-color: #9955bb;
 	border: 1px solid #393040;
 	color: #fff;
 }
 
-#registrar:hover, #registrar:focus{
+#registrar:hover, #registrar:focus, #enviar:hover, #enviar:focus{
 	background-color: #bfb063;
 	border-color: #6d5187;
 }
 
+#btnGroup{
+	text-align: center;
+	width: 100%;
+}
+
+.intro-header .site-heading h1 {
+	font-size: 45px;
+}
+
+#enviar{
+	width: 25em;
+}
 
 .navbar-inverse .nav li a:hover, .navbar-inverse .nav li a:focus {
 	color: #75667f;
