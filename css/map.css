@@ -56,3 +56,17 @@ html, body, #map-canvas {
 #target {
   width: 345px;
 }
+
+.local{
+  font-family: 'Montserrat';
+  font-weight: 200;
+  color: #393040;
+}
+
+.data{
+  font-family: 'Montserrat';
+  font-weight: 200;
+  font-size: 14px;
+  color: #75667f;
+  margin: 10px 0px;
+}

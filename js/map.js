@@ -67,17 +67,22 @@ function initialize() {
   var pinguimLatLong = new google.maps.LatLng(-30.037958, -51.222263);
   var image = 'img/pin.png';
 
+
+  var infowindow = new google.maps.InfoWindow({
+      content: '<h2 class="local">Bar Olar</h2><p class="data">28/02/2015</p>Estava na fila da festa quando um rapaz alto e moreno, com cabelo ralo,<br> e uma garrafa de cerveja na mão, me abordou e ofereceu sua comapnhia<br> de uma forma agressiva. Chamei ajuda de outras pessoas na fila para afastá-lo.'
+  });
+
   var markerOpiniao = new google.maps.Marker({
         position: opiniaoLatLong,
         map: map,
-        icon: image
+        icon: image,
+        clickable: true,
+        title: "opiniao"
     });
 
-  var pinguimOpiniao = new google.maps.Marker({
-        position: pinguimLatLong,
-        map: map,
-        icon: image
-    });
+    google.maps.event.addListener(markerOpiniao, 'click', function() {
+    infowindow.open(map,markerOpiniao);
+  });
 
 }
 
