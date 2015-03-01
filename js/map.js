@@ -29,14 +29,7 @@ function initialize() {
     markers = [];
     var bounds = new google.maps.LatLngBounds();
     for (var i = 0, place; place = places[i]; i++) {
-      var image = {
-        url: place.icon,
-        size: new google.maps.Size(71, 71),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(25, 25)
-      };
-
+      var image = 'img/pin.png'
       var marker = new google.maps.Marker({
         map: map,
         icon: image,
@@ -51,11 +44,28 @@ function initialize() {
 
     map.fitBounds(bounds);
   });
-  
+
   google.maps.event.addListener(map, 'bounds_changed', function() {
     var bounds = map.getBounds();
     searchBox.setBounds(bounds);
   });
+
+  var opiniaoLatLong = new google.maps.LatLng(-30.041778, -51.220882);
+  var pinguimLatLong = new google.maps.LatLng(-30.037958, -51.222263);
+  var image = 'img/pin.png';
+
+  var markerOpiniao = new google.maps.Marker({
+        position: opiniaoLatLong,
+        map: map,
+        icon: image
+    });
+
+  var pinguimOpiniao = new google.maps.Marker({
+        position: pinguimLatLong,
+        map: map,
+        icon: image
+    });
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
