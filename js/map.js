@@ -1,14 +1,26 @@
+function enableScrollingWithMouseWheel() {
+    map.setOptions({ scrollwheel: true });
+}
+
+function disableScrollingWithMouseWheel() {
+    map.setOptions({ scrollwheel: false });
+}
+
 function initialize() {
 
   var markers = [];
 
   var  mapOptions = {
 	  center: new google.maps.LatLng(-30.03, -51.21),
-	  zoom: 14,
+	  zoom: 13,
     scrollwheel: false,
 	  };
 
   var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  google.maps.event.addListener(map, 'click', function(event){
+          this.setOptions({scrollwheel:true});
+        });
 
   var input = /** @type {HTMLInputElement} */(
       document.getElementById('pac-input'));
