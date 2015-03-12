@@ -1,3 +1,6 @@
+![alt tag](http://i.imgur.com/yEJOsKH.png?1)
+
+
 # Não Me Calo
 
 O intuito do projeto Não Me Calo é mapear as áreas onde foram registrados assédios, tanto verbais como físicos, disponibilizando um espaço de compartilhamento de experiências, com depoimentos, rankings e avaliações dos estabelecimentos que possuem falhas na segurança para mulheres.
@@ -7,3 +10,17 @@ Com base nas informações compartilhadas, podemos cobrar dos estabelecimentos a
 ## Sobre o projeto
 
 Não Me Calo é um projeto criado por um grupo de cinco meninas durante a edição brasileira do evento [Ignite International Girls Hackaton 2015](http://ignite.globalfundforwomen.org/) , que tem como tema “Como construir iniciativas que resultem em ambientes mais seguros para garotas?”.
+
+## Colabore
+
+O Não Me Calor é um projeto de código aberto, ou seja, você pode usar nosso código-fonte em seus próprior projetos, ou nos ajudar a aprimorar o Não Me Calo! 
+
+Você pode baixar o projeto em formato .zip [clicando aqui](https://github.com/karenkgs/NaoMeCalo/archive/master.zip), ou pela linha de comando, usando o Git: 
+
+    $ git clone https://github.com/karenkgs/NaoMeCalo.git
+
+Entrar na pasta do projeto:
+
+    $ cd NaoMeCalo
+    
+E para executá-lo, basta abrir as páginas com a extensão .html em seu browser de preferência (Chrome, Firefox, Opera, etc).
