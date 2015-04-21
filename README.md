@@ -13,7 +13,7 @@ Não Me Calo é um projeto criado por um grupo de cinco meninas durante a ediç�
 
 ## Colabore
 
-O Não Me Calo é um projeto de código aberto, ou seja, você pode usar nosso código-fonte em seus próprio projetos, ou nos ajudar a aprimorar o Não Me Calo! 
+O Não Me Calo é um projeto de código aberto, ou seja, você pode usar nosso código-fonte em seus próprios projetos, ou nos ajudar a aprimorar o Não Me Calo! 
 
 Você pode baixar o projeto em formato .zip [clicando aqui](https://github.com/karenkgs/NaoMeCalo/archive/master.zip), ou pela linha de comando, usando o Git: 
 
