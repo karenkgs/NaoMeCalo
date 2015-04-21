@@ -10,180 +10,199 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <title>Não me calo!</title>
-	  	
+
     <link rel="icon" href="img/logo.png" sizes="16x16">
     <link href="css/map.css" rel="stylesheet">
     <link href="css/clean-blog.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
         <div class="navbar-header">
-		
-		<a class="navbar-brand" href="index.html">
-            <img id="big-logo" src="img/logo.png" />
-		</a>
 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+            <a class="navbar-brand" href="index.html">
+                <img id="big-logo" src="img/logo.png"/>
+            </a>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
         <div class="navbar-collapse collapse">
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="dicas.html">Dicas</a></li>
-            <li><a href="rank.html">Rank</a></li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="dicas.html">Dicas</a></li>
+                <li><a href="rank.html">Rank</a></li>
+            </ul>
         </div>
-      </div>
     </div>
+</div>
 
-    <header class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Não se pode calar um assédio!</h1>
-						<br>
-						<button class="btn btn-default" id="registrar" type="submit">Faça sua denúncia</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-	<p class="descricaomapa">Confira no mapa abaixo os acontecimentos registrados: </p>
-	
-    <div class="map">
-      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-      <div id="map-canvas"></div>
-    </div>
-	
-	<header class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading" id="facadenuncia">
-                        <h1>Faça sua denúncia</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-	
+<header class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<form class="form-horizontal" id="contactForm">
-					<fieldset>
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Categoria">Categoria</label>
-						  <div class="col-md-8">
-							<select id="Categoria" name="Categoria" class="form-control inpt">
-							<option value="0">Selecione a categoria do local</option>
-							  <option value="1">Estabelecimento Comercial</option>
-							  <option value="2">Evento</option>
-							  <option value="3">Rua</option>
-							</select>
-						  </div>
-						</div>
+                <div class="site-heading">
+                    <h1>Não se pode calar um assédio!</h1>
+                    <br>
+                    <button class="btn btn-default" id="registrar" type="submit">Faça sua denúncia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Nome do Local">Nome do Local</label>  
-						  <div class="col-md-8">
-						  <input id="Nome do Local" name="Nome do Local" type="text" placeholder="Dê nome ou detalhes ao local" class="form-control input-md inpt" required="">
-							
-						  </div>
-						</div>
+<p class="descricaomapa">Confira no mapa abaixo os acontecimentos registrados: </p>
 
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Localização">Localização</label>  
-						  <div class="col-md-8">
-						  <input id="Localização" name="Localização" type="text" placeholder="Localização" class="form-control input-md inpt" required="">
-							
-						  </div>
-						</div>
+<div class="map">
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Data do Acontecimento">Data</label>  
-						  <div class="col-md-8">
-						  <input id="Data do Acontecimento" name="Data" type="date" placeholder="Data" class="form-control input-md inpt" required="">
-							
-						  </div>
-						</div>
+    <div id="map-canvas"></div>
+</div>
 
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Turno">Turno</label>
-						  <div class="col-md-8">
-							<select id="Turno" name="Turno" class="form-control inpt">
-							<option value="0">Selecione um turno</option>
-							  <option value="1">Manhã</option>
-							  <option value="2">Tarde</option>
-							  <option value="2">Noite</option>
-							  <option value="4">Madrugada</option>
-							</select>
-						  </div>
-						</div>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="facadenuncia">
+                    <h1>Faça sua denúncia</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-						<div class="form-group">
-						  <label class="col-md-4 control-label" id="lblForm" for="Conte o que Aconteceu">Conte o que Aconteceu</label>
-						  <div class="col-md-8">                     
-							<textarea class="form-control inpt" id="txtArea" placeholder="Descreva a situação ou agressor(es)." name="Conte o que Aconteceu"></textarea>
-						  </div>
-						</div>
-						
-						<div class="form-group" id="btnGroup">
-							<button class="btn btn-default" id="enviar" type="submit">Enviar</button>
-						</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <form class="form-horizontal" id="contactForm">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Categoria">Categoria</label>
 
-						</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
+                        <div class="col-md-8">
+                            <select id="Categoria" name="Categoria" class="form-control inpt">
+                                <option value="0">Selecione a categoria do local</option>
+                                <option value="1">Estabelecimento Comercial</option>
+                                <option value="2">Evento</option>
+                                <option value="3">Rua</option>
+                            </select>
+                        </div>
+                    </div>
 
-    <hr>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Nome do Local">Nome do Local</label>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                            <a href="http://github.com/karenkgs/NaoMeCalo">
+                        <div class="col-md-8">
+                            <input id="Nome do Local" name="Nome do Local" type="text"
+                                   placeholder="Dê nome ou detalhes ao local" class="form-control input-md inpt"
+                                   required="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Localização">Localização</label>
+
+                        <div class="col-md-8">
+                            <input id="Localização" name="Localização" type="text" placeholder="Localização"
+                                   class="form-control input-md inpt" required="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Data do Acontecimento">Data</label>
+
+                        <div class="col-md-8">
+                            <input id="Data do Acontecimento" name="Data" type="date" placeholder="Data"
+                                   class="form-control input-md inpt" required="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Turno">Turno</label>
+
+                        <div class="col-md-8">
+                            <select id="Turno" name="Turno" class="form-control inpt">
+                                <option value="0">Selecione um turno</option>
+                                <option value="1">Manhã</option>
+                                <option value="2">Tarde</option>
+                                <option value="2">Noite</option>
+                                <option value="4">Madrugada</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="lblForm" for="Conte o que Aconteceu">Conte o que
+                            Aconteceu</label>
+
+                        <div class="col-md-8">
+                            <textarea class="form-control inpt" id="txtArea"
+                                      placeholder="Descreva a situação ou agressor(es)."
+                                      name="Conte o que Aconteceu"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="btnGroup">
+                        <button class="btn btn-default" id="enviar" type="submit">Enviar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <a href="http://github.com/karenkgs/NaoMeCalo">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright">Desenvolvido durante o <a href="http://ignite.globalfundforwomen.org/about">Ignite Girls Hackaton 2015</a> Porto Alegre</p>
-                </div>
+                    </a>
+                    </li>
+                </ul>
+                <p class="copyright">Desenvolvido durante o <a href="http://ignite.globalfundforwomen.org/about">Ignite
+                    Girls Hackaton 2015</a> Porto Alegre</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/map.js"></script>
-	<script type="text/javascript">	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript">
 		$( "#registrar" ).click(function() {
 		  $('html, body').animate({
 		   scrollTop: $("#facadenuncia").offset().top
 		}, 300);
 		});
-	</script>
+
+</script>
 </body>
 </html>
